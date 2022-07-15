@@ -1,4 +1,4 @@
-#include < stdio.h >
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -10,9 +10,7 @@
 
 int main(void)
 {
-	char myString[] = "with proper grammar, but the outcome is a piece of art,";
-
-	printf(myString);
+	printf("with proper grammar, but the outcome is a piece of art,");
 
 	return (0);
 }
