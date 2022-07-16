@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 /* more headers goes there */
-
 /**
  * Entry point - main
  *
@@ -9,7 +9,6 @@
  *
  * Return always 0
  */
-
 /* betty style doc for function main goes there */
 int main(void)
 {
@@ -18,14 +17,18 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n<0);
-	printf("is negative");
+	if (n < 0);
+	{
+		printf("is negative");
+	}		
+	else if (n > 0);
+	{
+		printf("is positive");
+	}
+	else
+	{
+		printf("is zero");
+	}
 	
-	if (n>0);
-	printf("is positive");
-	
-	if (n=0);
-	printf("is zero");
-
 	return (0);
 }
