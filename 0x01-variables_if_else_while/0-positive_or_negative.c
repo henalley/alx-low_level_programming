@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
+#include <stdio.h>
 /* more headers goes there */
 /**
  * Entry point - main
  *
- * Description: Program that generates positive or negative numbers icluding 0 stored in the variable n
+ * Description: Program that generates +/- numbers stored in the variable n
  *
- * Return always 0
+ * Return: Always 0 (Success)
  */
 /* betty style doc for function main goes there */
 int main(void)
@@ -17,18 +17,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n < 0);
+	if (n < 0)
 	{
-		printf("is negative");
-	}		
-	else if (n > 0);
+		printf("%d is negative\n");
+	}
+	else if (n > 0)
 	{
-		printf("is positive");
+		printf("%d is positive\n");
 	}
 	else
 	{
-		printf("is zero");
+		printf("%d is zero\n");
 	}
-	
 	return (0);
 }
